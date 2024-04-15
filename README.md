@@ -18,3 +18,4 @@
 
 <h3>Usage:</h3>
 <p><b>Admin: </b>Log in to the Admin Panel to manage user lists.</p>
+<p><b>Users: </b>Register or log in to access the User Panel and update profile/password.</p>
