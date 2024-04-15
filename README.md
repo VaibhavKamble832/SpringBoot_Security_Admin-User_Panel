@@ -11,3 +11,4 @@
 
 <h3>Technologies Used:</h3>
 <p><b>Spring Boot: </b>Facilitates rapid development and easy configuration of the backend.</p>
+<p><b>Spring Security: </b> Implements authentication and authorization functionalities.</p>
