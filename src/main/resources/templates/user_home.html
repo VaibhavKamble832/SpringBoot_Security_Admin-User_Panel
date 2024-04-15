@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="navbar::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Home Page</title>
+</head>
+<body>
+
+	<section>
+			
+		<div align="center" style="margin-top: 5%">
+			<h1 class="fw-bold ">WELCOME USER</h1>
+			
+			<h4 th:text="${user.name}"></h4>
+			<h4 th:text="${user.email}"></h4>
+			<h4 th:text="${user.role}"></h4>
+			
+		</div>	
+		
+		<!-- <div>
+			<h3><a class="btn btn-warning fw-bold fs-4 position-absolute" style="top: 100px; right: 150px" href="/user/editUser">Edit Profile</a></h3>
+		</div> -->
+
+	</section>
+
+</body>
+</html>

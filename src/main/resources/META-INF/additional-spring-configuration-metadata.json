@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "xspring.application.name",
+  "type": "java.lang.String",
+  "description": "A description for 'xspring.application.name'"
+}]}

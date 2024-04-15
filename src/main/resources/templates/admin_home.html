@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="navbar::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Home Page</title>
+
+</head>
+<body>
+
+
+	<section>
+			
+		<div align="center" style="margin-top: 5%">
+			<h1 class="fw-bold ">WELCOME ADMIN</h1>
+			
+			<h4 th:text="${user.name}"></h4>
+			<h4 th:text="${user.email}"></h4>
+			<h4 th:text="${user.role}"></h4>
+			
+			<h2><a href="/admin/userList" class="btn btn-dark fw-bold fs-2 mt-5 p-3">User List <i class="fa-solid fa-rectangle-list"></i></a></h2>
+				
+		</div>	
+		
+	</section>
+
+
+
+
+
+
+
+</body>
+</html>

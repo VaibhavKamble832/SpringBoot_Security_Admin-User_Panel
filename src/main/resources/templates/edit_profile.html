@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="navbar::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Profile Page</title>
+
+</head>
+<body>
+
+	<section>
+
+		<div class="container w-50 bg-light border border-warning rounded p-4" style="margin-top: 30px">
+			<h1 align="center">Edit Profile</h1>
+			
+			<th:block th:if="${session.msg}">
+				<p class="alert alert-success fs-6 text-center">[[${session.msg}]]</p>
+				<th:block th:text="${@myUserService.removeSessionMsg()}"></th:block>
+			</th:block>
+			
+			<th:block th:if="${session.emsg}">
+				<p class="alert alert-danger fs-6 text-center">[[${session.emsg}]]</p>
+				<th:block th:text="${@myUserService.removeSessionEMsg()}"></th:block>
+			</th:block>
+ 				
+			<form th:action="@{/editProfile}" method="post">
+				<div class="mb-3">
+					<label for="name" class="form-label fw-bold">Name</label> <input
+						type="text" class="form-control" name="name" th:value="${user.name}">
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label fw-bold">Email:</label> <input
+						type="email" class="form-control" name="email" th:value="${user.email}">
+				</div>
+				
+				<button type="submit" class="btn btn-success fw-bold">Submit</button>
+			</form>
+		</div>
+	</section>
+
+
+</body>
+</html>

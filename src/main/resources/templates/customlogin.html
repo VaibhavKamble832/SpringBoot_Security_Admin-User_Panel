@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="navbar::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+</head>
+<body>
+
+	<section>
+
+		<div class="container w-50 bg-light border border-warning rounded p-4" style="margin-top: 30px">
+			<h1 align="center">Login Page</h1>
+			
+			<th:block th:if="${param.error}">
+				<p class="alert alert-danger fs-6 text-center">Invalid Email_ID or Password</p>
+			</th:block>
+
+			<th:block th:if="${param.logout}">
+				<p class="alert alert-success fs-6 text-center">Logout Successfully</p>
+			</th:block>
+			
+			
+			<form th:action="@{/userLogin}" method="post">
+				
+				<div class="mb-3">
+					<label for="email" class="form-label fw-bold">Email:</label> <input
+						type="email" class="form-control" name="email" required="required">
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label fw-bold">Password:</label> <input
+						type="password" class="form-control" name="password" required="required">
+				</div>
+	
+				<button type="submit" class="btn btn-success fw-bold">Login</button>
+			</form>
+		</div>
+	</section>
+
+
+
+</body>
+</html>

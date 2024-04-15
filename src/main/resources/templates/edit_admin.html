@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="navbar::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Profile Page</title>
+
+</head>
+<body>
+
+	<section>
+
+		<div class="container w-50 bg-light border border-warning rounded p-4" style="margin-top: 30px">
+			<h1 align="center">Edit User</h1>
+			
+			<!-- <th:block th:if="${session.msg}">
+				<p class="text-center alert alert-success fs-5">[[${session.msg}]]</p>
+			</th:block> --> 		
+ 				
+			<form th:object="${user}" method="post">
+				<div class="mb-3">
+					<label for="name" class="form-label fw-bold">Name</label> <input
+						type="text" class="form-control" name="name" th:value="${user.name}">
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label fw-bold">Email:</label> <input
+						type="email" class="form-control" name="email" th:value="${user.email}">
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label fw-bold">Password:</label> <input
+						type="password" class="form-control" name="password" th:value="${user.password}">
+				</div>
+				<input type="hidden" class="form-control" name="role" th:value="${user.role}">
+				
+				<button type="submit" class="btn btn-success fw-bold">Submit</button>
+			</form>
+		</div>
+	</section>
+
+
+</body>
+</html>
