@@ -10,11 +10,11 @@
 <p><b> -Thymeleaf Templates: </b> Utilize Thymeleaf for dynamic server-side HTML rendering.</p>
 
 <h3>Technologies Used:</h3>
-<p><b>Spring Boot: </b>Facilitates rapid development and easy configuration of the backend.</p>
-<p><b>Spring Security: </b> Implements authentication and authorization functionalities.</p>
-<p><b>MySQL: </b>Manage user data efficiently with a relational database.</p>
-<p><b>Thymleaf: </b>Render dynamic server-side HTML templates.</p>
-<p><b>HTML/CSS: </b> Design and style user interface for an intuitive user experience.</p>
+<p><b>-Spring Boot: </b>Facilitates rapid development and easy configuration of the backend.</p>
+<p><b>-Spring Security: </b> Implements authentication and authorization functionalities.</p>
+<p><b>-MySQL: </b>Manage user data efficiently with a relational database.</p>
+<p><b>-Thymleaf: </b>Render dynamic server-side HTML templates.</p>
+<p><b>-HTML/CSS: </b> Design and style user interface for an intuitive user experience.</p>
 
 <h3>Usage:</h3>
 <p><b>1) Admin: </b>Log in to the Admin Panel to manage user lists.</p>
